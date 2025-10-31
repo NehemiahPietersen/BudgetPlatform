@@ -18,7 +18,9 @@ model User {
     updatedAt   DateTime    @updatedAt
     preferences Json?
 
-    @@map("users)
+    sessions  UserSession[]
+
+    @@map("users")
 }
 
 model UserSession {
